@@ -4,32 +4,8 @@ body {
   margin: 0;
 }
 
-.container {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.read-more-container {
-  margin-top: 30px;
-  overflow: hidden;
-  line-height: 1.5;
-}
-.read-more-container h2 {
-  margin-top: 20px;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-}
-
 ul {
   list-style: none;
-}
-
-.logo {
-  position: absolute;
-  left: 50%;
-  margin-left: -41px;
-  top: 9px;
 }
 
 .button {
@@ -53,28 +29,16 @@ h3 {
   color: #133944;
 }
 
-.images-container {
-  margin-top: 50px;
-  overflow: hidden;
+.container {
+  width: 1000px;
+  margin: 0 auto;
 }
 
-.first-image, .second-image, .third-image {
-  float: left;
-  width: 30%;
-  margin-right: 5%;
-}
-.first-image img, .second-image img, .third-image img {
-  max-width: 100%;
-}
-
-.third-image {
-  margin-right: 0;
-}
-
-.image-container {
-  height: 150px;
-  margin-bottom: 20px;
-  overflow: hidden;
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -41px;
+  top: 9px;
 }
 
 .navigation {
@@ -137,21 +101,6 @@ h3 {
   text-decoration: underline;
 }
 
-.lightbox {
-  background-color: rgba(0, 0, 0, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.lightbox .lightboxImage {
-  position: absolute;
-  left: 30%;
-  top: 30%;
-  border: 10px solid white;
-}
-
 footer {
   font-family: arial;
   overflow: hidden;
@@ -184,4 +133,67 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+.read-more-container {
+  margin-top: 30px;
+  overflow: hidden;
+  line-height: 1.5;
+}
+.read-more-container h2 {
+  margin-top: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.images-container {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.images-container ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.images-container ul li {
+  width: 30%;
+  float: left;
+  display: inline-block;
+}
+
+.images-container-image {
+  width: 30%;
+  margin-right: 5%;
+}
+.images-container-image img {
+  max-width: 100%;
+}
+
+.last-image {
+  margin-right: 0;
+}
+
+.image-container {
+  height: 150px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.lightbox .lightboxImage {
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  border: 10px solid white;
 }
