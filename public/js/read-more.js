@@ -8,7 +8,7 @@
       return {
         open: $('.expand-btn').on('click', function() {
           if ($('.read-more-expanded').hasClass('expanded')) {
-            $('.read-more-expanded').slideUp();
+            $('.read-more-expanded').slideUp().removeClass('expanded');
             $(this).text('Read more');
           } else {
             $('.read-more-expanded').addClass('expanded').slideDown();
