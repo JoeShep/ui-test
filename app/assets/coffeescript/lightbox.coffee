@@ -8,9 +8,14 @@ $ ->
     # Then I added CSS to override the style sheet if user has JS turned on.
     # Removed 'animate' and replaced with slideUp and slideDown, because I'm a JQuery fanboy.
     #
-    # For easier testing and maintenance I have broken the single JS file into smaller files. If this grew to where it involved requesting/loading a bunch of scripts in the layout head it would be bad 
+    # For easier testing and maintenance I have broken the single Coffescript file into smaller files. If this grew to where it involved requesting/loading a bunch of scripts in the layout head it would be bad 
     # for performance, though. I would address this by employing Rails and its asset pipeline, but that seems beyond the scope of this exercise.
     # If you disagree, I'm happy to give that a whirl.
+    #
+    # Finally, I realize on a larger project this would be better setup with a 'lightbox' constructor
+    # and some protoyped functions for opening and closing the lightbox. I'm still getting
+    # comforatable with OOJS and don't want to make a mess here trying to fake it 'til I make it.
+
     return {
 
       lightbox : $('.images-container').on 'click', 'img', ->
