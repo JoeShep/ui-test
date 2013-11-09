@@ -1,5 +1,5 @@
 body
-  font-family: Arial, Helvetica, sans-serif
+  font-family: $body-font
   padding: 0
   margin: 0
 
@@ -7,20 +7,31 @@ ul
   list-style: none
 
 // Buttons
+// Margin was having no effect, so I changed it to relative positioning with a 10px shift down
 .button
   background-color: $button-blue
   padding: 10px
   color: white
-  margin-top: 10px
   text-decoration: none
+  position: relative
+  top: 10px
 
 .hidden
   opacity: 0
 
 // Headings
 
+h1, h2, h3
+  font-family: $headings-font
+
 h1
-  font-size: 20px
+  font-size: 1.25em
+
+h2
+  margin-top: 20px
+  font-size: 16px
+  text-transform: uppercase
+  letter-spacing: 0.01em
 
 h3
   font-size: 14px

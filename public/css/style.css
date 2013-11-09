@@ -12,16 +12,28 @@ ul {
   background-color: #1e344c;
   padding: 10px;
   color: white;
-  margin-top: 10px;
   text-decoration: none;
+  position: relative;
+  top: 10px;
 }
 
 .hidden {
   opacity: 0;
 }
 
+h1, h2, h3 {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
 h1 {
-  font-size: 20px;
+  font-size: 1.25em;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
 }
 
 h3 {
@@ -43,7 +55,8 @@ h3 {
 
 .navigation {
   font-family: arial;
-  text-align: center;
+  text-transform: uppercase;
+  text-align: left;
   background-color: #124385;
 }
 .navigation ul {
@@ -53,7 +66,7 @@ h3 {
 }
 .navigation ul li {
   display: inline-block;
-  text-align: left;
+  text-align: center;
   float: left;
   height: 60px;
   margin: 0;
@@ -140,12 +153,6 @@ footer a:hover {
   overflow: hidden;
   line-height: 1.5;
 }
-.read-more-container h2 {
-  margin-top: 20px;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.01em;
-}
 
 .images-container {
   margin-top: 50px;
@@ -175,6 +182,7 @@ footer a:hover {
 }
 
 .image-container {
+  cursor: pointer;
   height: 150px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -189,6 +197,7 @@ footer a:hover {
   bottom: 0;
 }
 .lightbox .lightboxImage {
+  cursor: pointer;
   margin: auto;
   position: absolute;
   bottom: 0;
