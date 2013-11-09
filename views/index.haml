@@ -41,20 +41,21 @@
         Perhaps not the healthiest streetside breakfast, a piled-high plate of perfect arepas is hard to beat for pure morning pleasure. Golden grilled cornmeal cakes stuffed with eggs or cheese, and oozing butter, these little creations provide the perfect energy boost for a day on the Colombian city streets. Grab a portion from a vendor and wash it down with a steaming glass of hot chocolate. It might not do wonders for your waistline but it’ll certainly see you through a rainy Bogotá morning.
   %a.button.expand-btn.hidden{href: '#'} Read More
   
+  / I turned pic display into unordered list. Possibly a place to use <figure> and <figcaption>, but leaving them out pending a better understanding of what LP guidelines are. Is that a cop-out?
   .images-container
     %h3 Images of food
-    .first-image
-      .image-container
-        %img{src: 'http://media.lonelyplanet.com/lpi/19063/19063-10/469x264.jpg'}
-      %p Perhaps not the healthiest streetside breakfast, a piled-high plate of perfect arepas is hard to beat
-        
+    %ul
+      %li.images-container-image
+        .image-container
+          %img{src: 'http://media.lonelyplanet.com/lpi/19063/19063-10/469x264.jpg'}
+        %p Perhaps not the healthiest streetside breakfast, a piled-high plate of perfect arepas is hard to beat
 
-    .second-image
-      .image-container
-        %img{src: 'http://media.lonelyplanet.com/lpi/3808/3808-1/681x454.jpg'}
-      %p Perhaps not the healthiest streetside breakfast, a piled-high plate of perfect arepas is hard to beat
+      %li.images-container-image
+        .image-container
+          %img{src: 'http://media.lonelyplanet.com/lpi/3808/3808-1/681x454.jpg'}
+        %p Perhaps not the healthiest streetside breakfast, a piled-high plate of perfect arepas is hard to beat
 
-    .third-image
-      .image-container
-        %img{src: 'http://media.lonelyplanet.com/lpi/5478/5478-45/681x454.jpg'}
-      %p Perhaps not the healthiest streetside breakfast, a piled-high plate of perfect arepas is hard to beat
+      %li.images-container-image.last-image
+        .image-container
+          %img{src: 'http://media.lonelyplanet.com/lpi/5478/5478-45/681x454.jpg'}
+        %p Perhaps not the healthiest streetside breakfast, a piled-high plate of perfect arepas is hard to beat
