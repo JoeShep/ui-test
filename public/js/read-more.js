@@ -1,42 +1,20 @@
 (function() {
   $(function() {
     return window.LP = (function() {
-      var initialHeight;
-
-      initialHeight = 400;
+      $(".read-more-expanded").css({
+        display: "none"
+      });
+      $(".expand-btn").removeClass('hidden');
       return {
-        open: $('.button').on('click', function() {
-          if ($('.read-more-container').height() > 400) {
-            $('.read-more-container').animate({
-              height: initialHeight
-            }, 500);
+        open: $('.expand-btn').on('click', function() {
+          if ($('.read-more-expanded').hasClass('expanded')) {
+            $('.read-more-expanded').slideUp();
             $(this).text('Read more');
           } else {
-            $('.read-more-container').animate({
-              height: 1600
-            }, 500);
+            $('.read-more-expanded').addClass('expanded').slideDown();
             $(this).text('Read less');
           }
           return false;
-        }),
-        lightbox: $('.images-container').on('click', 'img', function() {
-          var closePic, image, lightboxContainer;
-
-          image = $('<img/>').addClass('lightboxImage').attr('src', $(this).attr('src'));
-          lightboxContainer = $('<div/>').addClass('lightbox').append(image);
-          $('body').append(lightboxContainer).on('keyup', function(e) {
-            if (e.keyCode === 13 || e.keyCode === 27) {
-              return closePic();
-            }
-          });
-          $('.lightbox').on('click', function() {
-            return closePic();
-          });
-          return closePic = function() {
-            return $(".lightbox").fadeOut("normal", function() {
-              return $(this).remove();
-            });
-          };
         })
       };
     })();
