@@ -5,13 +5,9 @@
 // Logo
 
 .logo
-  position: absolute
-  left: 50%
-  margin-left: -41px
-  top: 9px
+  margin: 9px -30px 9px auto
 
-
-//Added classes to liks to alleviate deep nesting
+//Added classes to links to alleviate deep nesting
 
 // Changed text alignment to better center the links
 
@@ -19,7 +15,7 @@
 .navigation
   font-family: arial
   text-transform: uppercase
-  text-align: left
+  text-align: center
   background-color: $nav-blue
   ul
     display: inline-block
@@ -28,13 +24,10 @@
     li
       display: inline-block
       text-align: center
-      float: left
       height: 60px
       margin: 0
       background-color: $nav-blue
       width: 150px
-      &:nth-child(3)
-        margin-right: 150px
 
 .core-nav-links
   color: white
@@ -43,6 +36,12 @@
   padding: 0 15px
   &:hover
     text-decoration: underline
+
+.left-nav
+  float: left
+
+.right-nav
+  float: right
 
 .sub-navigation
   font-family: arial

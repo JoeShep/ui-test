@@ -1,19 +1,28 @@
-- core_navigation = ['Home', 'Destinations', 'Shop', 'Hotels', 'Flights', 'Contact']
+- left_navigation = ['Home', 'Destinations', 'Shop']
+- right_navigation = ['Hotels', 'Flights', 'Contact']
 - sub_navigation = ['Images', 'Video', 'Games']
 
 / Added link to "home" to give extra option to user for getting back to home page
 / Wrapped nav in html5 header tag
 
 %header
-  %a{:href => "#"}
+  .navigation
+    .left-nav
+      %ul
+        - left_navigation.each do |item|
+          %li
+            %a.core-nav-links{href: '#'}
+              = item
+
+    %a{:href => "#"}
     %img.logo{src: "images/logo.png"}
 
-  .navigation
-    %ul
-      - core_navigation.each do |item|
-        %li
-          %a.core-nav-links{href: '#'}
-            = item
+    .right-nav
+      %ul
+        - right_navigation.each do |item|
+          %li
+            %a.core-nav-links{href: '#'}
+              = item
 
   .sub-navigation
     %ul
