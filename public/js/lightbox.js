@@ -1,6 +1,8 @@
 (function() {
+  window.LP = {};
+
   $(function() {
-    return window.LP = (function() {
+    return LP.lightbox = (function() {
       return {
         lightbox: $('.images-container').on('click', 'img', function() {
           var closePic, image, lightboxContainer;

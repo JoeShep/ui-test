@@ -1,6 +1,6 @@
 (function() {
   $(function() {
-    return window.LP = (function() {
+    return LP.readmore = (function() {
       $(".read-more-expanded").css({
         display: "none"
       });

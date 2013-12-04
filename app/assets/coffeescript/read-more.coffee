@@ -1,6 +1,6 @@
 $ ->
 
-  window.LP = (->
+  LP.readmore = (->
 
     $(".read-more-expanded").css
         display: "none"
