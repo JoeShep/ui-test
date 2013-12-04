@@ -1,17 +1,15 @@
 (function() {
   $(function() {
     return LP.readmore = (function() {
-      $(".read-more-expanded").css({
-        display: "none"
-      });
-      $(".expand-btn").removeClass('hidden');
+      $(".read-more-container").toggleClass('rm-expanded rm-closed');
+      $(".expand-btn").removeClass('btn-hidden');
       return {
         open: $('.expand-btn').on('click', function() {
-          if ($('.read-more-expanded').hasClass('expanded')) {
-            $('.read-more-expanded').slideUp().removeClass('expanded');
+          if ($('.read-more-container').hasClass('rm-expanded')) {
+            $('.read-more-container').toggleClass('rm-expanded rm-closed');
             $(this).text('Read more');
           } else {
-            $('.read-more-expanded').addClass('expanded').slideDown();
+            $('.read-more-container').toggleClass('rm-closed rm-expanded');
             $(this).text('Read less');
           }
           return false;
