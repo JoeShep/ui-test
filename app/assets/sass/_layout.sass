@@ -11,10 +11,7 @@
   top: 9px
 
 
-// There is some deep nesting here. I would maybe break this out. 
-// Honestly, I'm learning what is too deep and what isn't (Is three layers a hard and fast rule?).
-// I am not afraid to look dumb by asking tons of questions, especially on a new team
-// where standards are being established. Count on my ego being checked at the door.
+//Added classes to liks to alleviate deep nesting
 
 // Changed text alignment to better center the links
 
@@ -38,13 +35,14 @@
       width: 150px
       &:nth-child(3)
         margin-right: 150px
-      a
-        color: white
-        text-decoration: none
-        line-height: 60px
-        padding: 0 15px
-        &:hover
-          text-decoration: underline
+
+.core-nav-links
+  color: white
+  text-decoration: none
+  line-height: 60px
+  padding: 0 15px
+  &:hover
+    text-decoration: underline
 
 .sub-navigation
   font-family: arial
@@ -61,13 +59,14 @@
       height: 60px
       width: auto
       margin: 0
-      a
-        color: $headings-blue
-        text-decoration: none
-        line-height: 60px
-        padding: 0 15px
-        &:hover
-          text-decoration: underline
+
+.sub-nav-links
+  color: $headings-blue
+  text-decoration: none
+  line-height: 60px
+  padding: 0 15px
+  &:hover
+    text-decoration: underline
 
 // Footer
 

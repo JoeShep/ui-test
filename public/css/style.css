@@ -13,8 +13,6 @@ ul {
   padding: 10px;
   color: white;
   text-decoration: none;
-  position: relative;
-  top: 10px;
 }
 
 .hidden {
@@ -76,13 +74,14 @@ h3 {
 .navigation ul li:nth-child(3) {
   margin-right: 150px;
 }
-.navigation ul li a {
+
+.core-nav-links {
   color: white;
   text-decoration: none;
   line-height: 60px;
   padding: 0 15px;
 }
-.navigation ul li a:hover {
+.core-nav-links:hover {
   text-decoration: underline;
 }
 
@@ -104,13 +103,14 @@ h3 {
   width: auto;
   margin: 0;
 }
-.sub-navigation ul li a {
+
+.sub-nav-links {
   color: #133944;
   text-decoration: none;
   line-height: 60px;
   padding: 0 15px;
 }
-.sub-navigation ul li a:hover {
+.sub-nav-links:hover {
   text-decoration: underline;
 }
 
